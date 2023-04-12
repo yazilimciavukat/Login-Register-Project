@@ -1,0 +1,131 @@
+/*Ana Özellikleri Tanımlama ve Özellik Sıfırlama*/
+body{
+   --color-primary: rgba(92, 155, 63, 0.9);
+   --color-primary--dark: rgba(35, 157, 35, 0.5);
+   --color-secondary: rgb(46, 46, 146, 0.5);
+   --color-error: rgb(216, 26, 26);
+   --color-success: rgb(18, 96, 18);
+   --border-radius: 5px;
+   --color-main: rgb(13, 100, 13);
+   --color-component: rgb(180, 180, 85);
+   
+   background: linear-gradient(to right, var(--color-primary--dark), var(--color-secondary)), URL(bg.jpeg);
+   background-attachment: fixed;
+   background-size: cover;
+
+   margin: 0;
+   padding: 0;
+
+   height: 100vh;
+   font-size: 20px;
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+
+/* Ana Taşıyıcı */
+
+.conteiner{
+   width: 400px;
+   max-height: 450px;
+   
+   margin: 1rem;
+}   
+
+.form{
+   text-align: center;
+   padding: 1rem;
+   background-color: rgba(250, 250, 250, 0.7);
+   box-shadow: 0 0 40px rgb(0, 0, 0, 0.7);
+   border-radius: var(--border-radius);
+
+}
+
+.form_title{
+   margin-bottom: 1rem;
+   margin-top: 0rem;
+
+}
+
+.form_message{
+   color: var(--color-error);
+}
+
+.form_input-error-message{
+   color: var(--color-error);
+   font-size: 15px;
+   text-align: left;
+   margin-top: 10px;
+
+}
+
+.form_input--group{
+   margin-bottom: 1rem;
+   margin-top: 1rem;
+}
+
+.form-input{
+   width: 100%;
+  
+   box-sizing: border-box;
+   padding: 0.7rem;
+   border-radius: var(--border-radius);
+   outline: none;
+   border: 2px solid #ddd;
+   background-color: #eee;
+   transition: background 2s, border-color 2s;
+   text-align: left;
+
+}
+
+.form-input:focus{
+   border-color: var(--color-main);
+   background-color: white;
+}
+
+.form_button{
+   width: 100%;
+   padding: 1rem 2rem;
+   font-weight: bold;
+   font-size: 1.1rem;
+   color: white;
+   border: none;
+   background-color: var(--color-primary);
+   border-radius: var(--border-radius);
+}
+
+.form_button:hover{
+   background-color: rgb(57, 95, 39);
+   transition: 0.8s;
+
+}
+
+.form_button:active{
+   transform: scale(0.8);
+}
+
+.form_link{
+   color: var(--color-main);
+   text-decoration: none;
+   cursor: pointer;
+   margin-bottom: -10px;
+
+}
+.form_link:hover{
+   color: var(--color-component);
+}
+
+
+.form_text{
+   display: flex;
+   justify-content: space-between;
+   margin: 1rem;
+}
+
+.form_text_for_all{
+   margin: 10px;
+}
+
